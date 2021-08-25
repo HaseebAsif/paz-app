@@ -85,7 +85,7 @@
           <div class="collapse navbar-collapse" id="collapsibleNavbar">
             <ul class="navbar-nav ml-auto mt-2">
               <li class="nav-item">
-                <a class="metamask-btn is-disabled">
+                <a class="metamask-btn" onclick="addToken()">
                   <span>Add PAZ to Metamask</span>
                 </a>
               </li>
@@ -564,7 +564,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar-2">
               <ul class="navbar-nav ml-auto mt-2">
                 <li class="nav-item">
-                  <a class="metamask-btn is-disabled" href="#">
+                  <a class="metamask-btn" onclick="addToken()">
                     <span>Add PAZ to Metamask</span>
                   </a>
                 </li>
@@ -1066,6 +1066,14 @@
                     class="hover-magnify footer-icon"
                 /></a>
               </li>
+              <li class="mx-1">
+                <a onclick="addToken()"
+                  ><img
+                    src="./assets/img/metmask-icon.svg"
+                    alt="meta mask"
+                    class="hover-magnify"
+                /></a>
+              </li>
             </ul>
           </div>
           <div class="col-md-6">
@@ -1159,5 +1167,6 @@
     <script src="./assets/js/connectWallet.js"></script>
     <!-- read contract Script -->
     <script src="./assets/js/readContract.js"></script>
+    <script src="./assets/js/addToken.js"></script>
   </body>
 </html>
