@@ -7,7 +7,7 @@ let status;
 let web3Modal;
 let connection;
 let provider;
-let contractAddress = "0x68590a47578E5060a29fd99654f4556dBfa05D10";
+let contractAddress = "0xEA1a5ea0807Df64CB73405E92f6A72369131E966"; //This is the testnet contract address
 let abi = [
   {
     inputs: [
