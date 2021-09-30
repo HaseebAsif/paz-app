@@ -1,7 +1,8 @@
-const tokenAddress = "0xEA1a5ea0807Df64CB73405E92f6A72369131E966";  // THIS IS THE TESTNET CONTRACT ADDRESS
+const tokenAddress = "0xEA1a5ea0807Df64CB73405E92f6A72369131E966"; // THIS IS THE TESTNET CONTRACT ADDRESS
 const tokenSymbol = "PAZ";
 const tokenDecimals = 9;
-const tokenImage = "https://develop.dx27hd910sf2y.amplifyapp.com/assets/img/pazzive-coin-dark.png";
+const tokenImage =
+  "https://develop.dx27hd910sf2y.amplifyapp.com/assets/img/pazzive-coin-dark.png";
 
 async function addToken() {
   if (

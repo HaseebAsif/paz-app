@@ -20,7 +20,7 @@ const NavBar = () => {
             width="24"
             height="24"
             viewBox="0 0 172 172"
-            style={{fill: "#000000"}}
+            style={{ fill: "#000000" }}
           >
             <g
               fill="none"
@@ -36,7 +36,7 @@ const NavBar = () => {
               font-weight="none"
               font-size="none"
               text-anchor="none"
-              style={{ mixBlendMode: 'normal' }}
+              style={{ mixBlendMode: "normal" }}
             >
               <path d="M0,172v-172h172v172z" fill="none"></path>
               <g fill="#ffffff">
