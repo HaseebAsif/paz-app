@@ -1,55 +1,27 @@
 {
-  "name": "pazz-app-react",
-  "version": "0.1.0",
+  "name": "pazz-app",
+  "version": "1.0.0",
+  "keywords": [
+    "ethereum",
+    "react",
+    "workspaces",
+    "yarn"
+  ],
   "private": true,
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "format": "prettier --write 'src/**/*.{js,jsx}'",
-    "lint": "eslint 'src/**/*.{js,jsx}'"
+    "subgraph:auth": "yarn workspace @project/subgraph auth",
+    "subgraph:codegen": "yarn workspace @project/subgraph codegen",
+    "subgraph:build": "yarn workspace @project/subgraph build",
+    "subgraph:deploy": "yarn workspace @project/subgraph deploy",
+    "react-app:build": "yarn workspace @project/react-app build",
+    "react-app:eject": "yarn workspace @project/react-app eject",
+    "react-app:ipfs": "yarn workspace @project/react-app ipfs",
+    "react-app:start": "yarn workspace @project/react-app start",
+    "react-app:test": "yarn workspace @project/react-app test"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "echo 'yarn format'",
-      "commit-msg": "echo 'commitlint -E HUSKY_GIT_PARAMS'"
-    }
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
+  "workspaces": {
+    "packages": [
+      "packages/*"
     ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "dependencies": {
-    "ethers": "^5.4.7",
-    "react": "^17.0.2",
-    "react-bootstrap": "^1.6.4",
-    "react-dom": "^17.0.2",
-    "react-dropdown": "^1.9.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^13.2.0",
-    "@commitlint/config-conventional": "^13.2.0",
-    "@testing-library/jest-dom": "^5.14.1",
-    "@testing-library/react": "^12.1.1",
-    "@testing-library/user-event": "^13.2.1",
-    "husky": "4.3.5",
-    "prettier": "2.4.1"
   }
 }
